@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptForge · AI Prompt 自动优化系统</title>
+    <meta name="description" content="基于大模型的 Prompt 自动搜索与优化系统，支持分类、摘要、翻译多任务优化">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+        <div class="bg-orb bg-orb-4"></div>
+        <div class="bg-grid"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <div class="logo-group">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366f1" />
+                                <stop offset="50%" style="stop-color:#a855f7" />
+                                <stop offset="100%" style="stop-color:#ec4899" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="2" y="2" width="36" height="36" rx="10" fill="url(#logoGrad)" opacity="0.15" />
+                        <path d="M12 28L20 12L28 28" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M15 22H25" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" />
+                        <circle cx="20" cy="12" r="2" fill="url(#logoGrad)" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="logo-title">PromptForge</h1>
+                    <p class="logo-subtitle">AI Prompt 自动优化系统</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-model-badge" id="headerModelBadge">
+                    <span class="model-dot" id="headerModelDot"></span>
+                    <span id="headerModelName">Qwen3.5</span>
+                </div>
+                <div class="status-pill" id="statusPill">
+                    <span class="status-dot"></span>
+                    <span class="status-text">就绪</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero Stats -->
+        <section class="hero-stats" id="heroStats">
+            <div class="hero-stat-card">
+                <div class="hero-stat-icon">🧠</div>
+                <div class="hero-stat-info">
+                    <div class="hero-stat-value" id="heroModels">3</div>
+                    <div class="hero-stat-label">可用模型</div>
+                </div>
+            </div>
+            <div class="hero-stat-card">
+                <div class="hero-stat-icon">📋</div>
+                <div class="hero-stat-info">
+                    <div class="hero-stat-value" id="heroTasks">3</div>
+                    <div class="hero-stat-label">任务类型</div>
+                </div>
+            </div>
+            <div class="hero-stat-card">
+                <div class="hero-stat-icon">⚡</div>
+                <div class="hero-stat-info">
+                    <div class="hero-stat-value" id="heroAlgos">3</div>
+                    <div class="hero-stat-label">优化算法</div>
+                </div>
+            </div>
+            <div class="hero-stat-card">
+                <div class="hero-stat-icon">📊</div>
+                <div class="hero-stat-info">
+                    <div class="hero-stat-value" id="heroSamples">—</div>
+                    <div class="hero-stat-label">数据样本</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 1: Configuration Panel -->
+        <section class="config-section" id="configSection">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>配置优化参数</h2>
+                <p class="section-desc">选择模型、任务类型、优化算法和迭代次数</p>
+            </div>
+
+            <!-- Model Selection Cards -->
+            <div class="config-block">
+                <div class="config-block-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
+                        <path d="M12 6v6l4 2" />
+                    </svg>
+                    <span>选择大语言模型</span>
+                </div>
+                <div class="model-cards" id="modelCards">
+                    <button class="model-card active" data-model="qwen3.5-35b-a3b" id="modelQwen">
+                        <div class="model-card-glow qwen"></div>
+                        <div class="model-card-inner">
+                            <div class="model-card-top">
+                                <div class="model-badge qwen">Q</div>
+                                <div class="model-check">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="model-name">Qwen3.5-35B-A3B</div>
+                            <div class="model-provider">通义千问</div>
+                            <div class="model-desc">35B总参/3B激活 · 混合架构 · 思考模式</div>
+                            <div class="model-tags">
+                                <span class="model-tag">MoE</span>
+                                <span class="model-tag">262K Context</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="model-card" data-model="deepseek-v3" id="modelDeepSeek">
+                        <div class="model-card-glow deepseek"></div>
+                        <div class="model-card-inner">
+                            <div class="model-card-top">
+                                <div class="model-badge deepseek">D</div>
+                                <div class="model-check">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="model-name">DeepSeek-V3</div>
+                            <div class="model-provider">DeepSeek</div>
+                            <div class="model-desc">671B MoE架构 · 高性能推理 · 代码生成</div>
+                            <div class="model-tags">
+                                <span class="model-tag">671B</span>
+                                <span class="model-tag">MoE</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="model-card" data-model="kimi-k2" id="modelKimi">
+                        <div class="model-card-glow kimi"></div>
+                        <div class="model-card-inner">
+                            <div class="model-card-top">
+                                <div class="model-badge kimi">K</div>
+                                <div class="model-check">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="model-name">Kimi-K2</div>
+                            <div class="model-provider">Moonshot AI</div>
+                            <div class="model-desc">多模态原生 · Agent协作 · 即时推理</div>
+                            <div class="model-tags">
+                                <span class="model-tag">Multimodal</span>
+                                <span class="model-tag">Agent</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Task + Algorithm + Params Row -->
+            <div class="config-grid">
+                <!-- Task Type -->
+                <div class="config-card" id="taskConfig">
+                    <div class="config-card-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                        <span>任务类型</span>
+                    </div>
+                    <div class="task-buttons">
+                        <button class="task-btn active" data-task="classification" id="btnClassification">
+                            <div class="task-btn-icon">🏷️</div>
+                            <div class="task-btn-text">
+                                <div class="task-btn-label">文本分类</div>
+                                <div class="task-btn-desc">Accuracy 评估</div>
+                            </div>
+                        </button>
+                        <button class="task-btn" data-task="summarization" id="btnSummarization">
+                            <div class="task-btn-icon">📝</div>
+                            <div class="task-btn-text">
+                                <div class="task-btn-label">文本摘要</div>
+                                <div class="task-btn-desc">ROUGE 评估</div>
+                            </div>
+                        </button>
+                        <button class="task-btn" data-task="translation" id="btnTranslation">
+                            <div class="task-btn-icon">🌐</div>
+                            <div class="task-btn-text">
+                                <div class="task-btn-label">中英翻译</div>
+                                <div class="task-btn-desc">BLEU 评估</div>
+                            </div>
+                        </button>
+                    </div>
+                    <!-- Multi-Task Toggle (inside task card) -->
+                    <div class="multi-task-inline" id="multiTaskBar">
+                        <div class="multi-task-toggle-row">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="multiTaskToggle">
+                                <span class="toggle-slider"></span>
+                            </label>
+                            <span class="multi-task-label">多任务模式</span>
+                        </div>
+                        <div class="multi-task-tasks" id="multiTaskTasks" style="display:none;">
+                            <label class="checkbox-pill"><input type="checkbox" value="classification" checked>
+                                分类</label>
+                            <label class="checkbox-pill"><input type="checkbox" value="summarization" checked>
+                                摘要</label>
+                            <label class="checkbox-pill"><input type="checkbox" value="translation" checked> 翻译</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Algorithm -->
+                <div class="config-card" id="algoConfig">
+                    <div class="config-card-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" />
+                        </svg>
+                        <span>优化算法</span>
+                    </div>
+                    <div class="algo-buttons">
+                        <button class="algo-btn active" data-algo="random_search" id="btnRandom">
+                            <div class="algo-btn-badge random">RS</div>
+                            <div class="algo-btn-info">
+                                <div class="algo-btn-name">随机搜索</div>
+                                <div class="algo-btn-desc">Random Search</div>
+                            </div>
+                        </button>
+                        <button class="algo-btn" data-algo="genetic" id="btnGenetic">
+                            <div class="algo-btn-badge genetic">GA</div>
+                            <div class="algo-btn-info">
+                                <div class="algo-btn-name">遗传算法</div>
+                                <div class="algo-btn-desc">Genetic Algorithm</div>
+                            </div>
+                        </button>
+                        <button class="algo-btn" data-algo="bayesian" id="btnBayesian">
+                            <div class="algo-btn-badge bayesian">BO</div>
+                            <div class="algo-btn-info">
+                                <div class="algo-btn-name">贝叶斯优化</div>
+                                <div class="algo-btn-desc">Bayesian Optimization</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Parameters -->
+                <div class="config-card" id="paramsConfig">
+                    <div class="config-card-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="3" />
+                            <path d="M12 1v6m0 6v10M1 12h6m6 0h10" />
+                        </svg>
+                        <span>参数设置</span>
+                    </div>
+                    <div class="params-list">
+                        <div class="param-item">
+                            <label for="iterSlider">迭代次数</label>
+                            <div class="param-control">
+                                <input type="range" id="iterSlider" min="3" max="20" value="8" class="fancy-slider">
+                                <span class="param-value" id="iterValue">8</span>
+                            </div>
+                        </div>
+                        <div class="param-item">
+                            <label for="llmJudgeToggle">LLM-as-Judge</label>
+                            <div class="param-control">
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="llmJudgeToggle">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Prompt Input -->
+            <div class="custom-prompt-card" id="customPromptCard">
+                <div class="custom-prompt-header">
+                    <div class="custom-prompt-title">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                        </svg>
+                        <span>初始提示词（可选）</span>
+                    </div>
+                    <span class="custom-prompt-hint">留空则自动生成</span>
+                </div>
+                <div class="custom-prompt-body">
+                    <textarea class="custom-prompt-input" id="customPromptInput" rows="3"
+                        placeholder="输入你的初始 Prompt，系统将以此为基础进行优化迭代..."></textarea>
+                </div>
+            </div>
+
+            <!-- Data Selector -->
+            <div class="data-preview-card" id="dataPreviewCard">
+                <div class="data-preview-header">
+                    <div class="data-preview-title">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <path d="M14 2v6h6" />
+                            <path d="M16 13H8M16 17H8M10 9H8" />
+                        </svg>
+                        <span>选择评估数据</span>
+                    </div>
+                    <div class="data-header-actions">
+                        <button class="data-action-btn" id="btnSelectAll">全选</button>
+                        <button class="data-action-btn" id="btnSelectNone">清空</button>
+                        <span class="data-preview-count" id="dataPreviewCount">已选 0 / 0</span>
+                    </div>
+                </div>
+                <div class="data-preview-samples" id="dataPreviewSamples">
+                    <div class="data-sample-placeholder">选择任务后将显示可选数据</div>
+                </div>
+            </div>
+
+            <!-- Start Button -->
+            <div class="start-area">
+                <button class="start-btn" id="startBtn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <polygon points="5,3 19,12 5,21" />
+                    </svg>
+                    <span>开始优化</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Step 2: Live Progress -->
+        <section class="progress-section hidden" id="progressSection">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>优化进度</h2>
+                <p class="section-desc" id="progressDesc">正在搜索最优 Prompt ...</p>
+            </div>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar" style="width:0%"></div>
+            </div>
+            <div class="progress-stats">
+                <div class="stat-chip">
+                    <span class="stat-label">迭代</span>
+                    <span class="stat-value" id="statIter">0 / 0</span>
+                </div>
+                <div class="stat-chip">
+                    <span class="stat-label">当前得分</span>
+                    <span class="stat-value" id="statCurrent">—</span>
+                </div>
+                <div class="stat-chip highlight">
+                    <span class="stat-label">最佳得分</span>
+                    <span class="stat-value" id="statBest">—</span>
+                </div>
+                <div class="stat-chip">
+                    <span class="stat-label">耗时</span>
+                    <span class="stat-value" id="statTime">0s</span>
+                </div>
+                <div class="stat-chip model-chip">
+                    <span class="stat-label">模型</span>
+                    <span class="stat-value stat-model" id="statModel">—</span>
+                </div>
+            </div>
+
+            <!-- Live Log -->
+            <div class="live-log-container">
+                <div class="live-log-header">
+                    <span>实时日志</span>
+                    <span class="log-badge" id="logBadge">LIVE</span>
+                </div>
+                <div class="live-log" id="liveLog"></div>
+            </div>
+        </section>
+
+        <!-- Step 3: Results -->
+        <section class="results-section hidden" id="resultsSection">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>优化结果</h2>
+                <p class="section-desc">最优 Prompt、得分变化与分析</p>
+            </div>
+
+            <!-- Best Prompt Card -->
+            <div class="best-prompt-card" id="bestPromptCard">
+                <div class="best-prompt-header">
+                    <div class="best-prompt-badge">🏆 最优 Prompt</div>
+                    <div class="best-prompt-score" id="bestScore">0.0000</div>
+                </div>
+                <div class="best-prompt-text" id="bestPromptText">—</div>
+                <div class="best-prompt-meta" id="bestPromptMeta"></div>
+            </div>
+
+            <!-- Charts Grid -->
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <div class="chart-card-header">
+                        <h3>📈 得分变化曲线</h3>
+                    </div>
+                    <div class="chart-wrap">
+                        <canvas id="scoreCurveChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-card-header">
+                        <h3>📊 得分分布</h3>
+                    </div>
+                    <div class="chart-wrap">
+                        <canvas id="scoreDistChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Keyword Contributions -->
+            <div class="chart-card full-width" id="keywordSection">
+                <div class="chart-card-header">
+                    <h3>🔑 关键词贡献度分析</h3>
+                    <p class="chart-desc">每个关键词对 Prompt 性能的边际贡献</p>
+                </div>
+                <div class="chart-wrap chart-wrap-wide">
+                    <canvas id="keywordChart"></canvas>
+                </div>
+            </div>
+
+            <!-- All Results Table -->
+            <div class="chart-card full-width">
+                <div class="chart-card-header">
+                    <h3>📋 全部搜索记录</h3>
+                </div>
+                <div class="results-table-wrap">
+                    <table class="results-table" id="resultsTable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Prompt</th>
+                                <th>得分</th>
+                                <th>指标详情</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Multi-Task Results -->
+            <div class="multi-results-section hidden" id="multiResultsSection">
+                <div class="chart-card full-width">
+                    <div class="chart-card-header">
+                        <h3>🔀 多任务对比</h3>
+                    </div>
+                    <div class="chart-wrap">
+                        <canvas id="multiTaskChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="result-actions">
+                <button class="action-btn secondary" id="btnRestart">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 4v6h6M23 20v-6h-6" />
+                        <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" />
+                    </svg>
+                    重新优化
+                </button>
+                <button class="action-btn primary" id="btnExport">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                    </svg>
+                    导出报告
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>PromptForge · AI Prompt 自动优化系统 · SZU AI Lab © 2026</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

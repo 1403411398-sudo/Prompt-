@@ -1,0 +1,402 @@
+[
+  {
+    "source": "人工智能正在改变我们的生活方式，从智能手机助手到自动驾驶汽车，AI技术无处不在。",
+    "reference": "Artificial intelligence is changing our way of life. From smartphone assistants to self-driving cars, AI technology is everywhere."
+  },
+  {
+    "source": "深圳是中国改革开放的前沿城市，从一个小渔村发展成为国际化大都市。",
+    "reference": "Shenzhen is a frontier city of China's reform and opening up, developing from a small fishing village into an international metropolis."
+  },
+  {
+    "source": "中国传统文化博大精深，包括书法、绘画、诗词、戏曲等多种艺术形式。",
+    "reference": "Traditional Chinese culture is extensive and profound, encompassing various art forms including calligraphy, painting, poetry, and opera."
+  },
+  {
+    "source": "量子计算机有望在未来十年内解决传统计算机无法处理的复杂问题。",
+    "reference": "Quantum computers are expected to solve complex problems that traditional computers cannot handle within the next decade."
+  },
+  {
+    "source": "健康饮食和规律运动是预防慢性疾病的最有效方法之一。",
+    "reference": "A healthy diet and regular exercise are among the most effective ways to prevent chronic diseases."
+  },
+  {
+    "source": "随着5G网络的普及，物联网设备的连接数量将呈指数级增长。",
+    "reference": "With the widespread adoption of 5G networks, the number of connected IoT devices will grow exponentially."
+  },
+  {
+    "source": "可持续发展要求我们在经济增长的同时保护环境和自然资源。",
+    "reference": "Sustainable development requires us to protect the environment and natural resources while achieving economic growth."
+  },
+  {
+    "source": "机器学习算法可以从大量数据中发现隐藏的模式和规律。",
+    "reference": "Machine learning algorithms can discover hidden patterns and regularities from large amounts of data."
+  },
+  {
+    "source": "尽管自然语言处理技术已经取得了长足进步，但机器翻译在处理文化隐喻、双关语和语境依赖的表达时仍然面临巨大挑战。",
+    "reference": "Although natural language processing technology has made significant progress, machine translation still faces great challenges when dealing with cultural metaphors, puns, and context-dependent expressions."
+  },
+  {
+    "source": "他这个人啊，嘴上说得天花乱坠，实际上是个十足的马后炮，每次出了事才装模作样地指点江山。",
+    "reference": "He talks a big game, but he's a quintessential Monday morning quarterback—every time something goes wrong, he puts on airs and plays the sage."
+  },
+  {
+    "source": "三十年河东三十年河西，莫欺少年穷。当年那个被人看不起的穷小子，如今已经是身家过亿的企业家了。",
+    "reference": "Fortune is a wheel that turns for everyone. Don't look down on a young man for being poor. That once-despised penniless youth has now become an entrepreneur worth hundreds of millions."
+  },
+  {
+    "source": "在全球化背景下，各国之间的经济依存度不断加深，但贸易保护主义抬头、地缘政治紧张以及供应链脆弱性等问题也日益凸显，国际合作与竞争并存的格局愈发复杂。",
+    "reference": "In the context of globalization, economic interdependence among countries continues to deepen, yet issues such as rising trade protectionism, geopolitical tensions, and supply chain fragility are becoming increasingly prominent, making the landscape of coexisting international cooperation and competition ever more complex."
+  },
+  {
+    "source": "这个项目从立项到落地历经九九八十一难，中间经历了三次推倒重来，但团队咬牙坚持，最终交付了一个令客户满意的产品。",
+    "reference": "This project went through countless trials and tribulations from inception to completion, including three complete overhauls. Yet the team persevered through thick and thin and ultimately delivered a product that satisfied the client."
+  },
+  {
+    "source": "太极拳讲究以柔克刚、借力打力，看似慢悠悠的动作中蕴含着深厚的哲学思想和实战技巧。",
+    "reference": "Tai Chi emphasizes overcoming hardness with softness and redirecting an opponent's force. Behind its seemingly slow and flowing movements lie profound philosophical ideas and practical combat techniques."
+  },
+  {
+    "source": "区块链技术的去中心化特性为数字资产确权、跨境支付清算和供应链溯源等领域提供了全新的技术范式，但其高能耗和监管困境也引发了广泛的社会讨论。",
+    "reference": "The decentralized nature of blockchain technology provides a new technological paradigm for areas such as digital asset authentication, cross-border payment settlement, and supply chain traceability. However, its high energy consumption and regulatory challenges have also sparked widespread social debate."
+  },
+  {
+    "source": "气候变暖正导致极地冰川加速融化，如果不采取紧急减排措施，全球海平面上升将威胁数以亿计的沿海居民。",
+    "reference": "Global warming is accelerating the melting of polar glaciers. If urgent emission reduction measures are not taken, rising global sea levels will threaten hundreds of millions of coastal residents."
+  },
+  {
+    "source": "远程办公不仅仅是工作地点的改变，更是企业管理模式和重塑员工信任的契机。",
+    "reference": "Remote work is not just a change in workplace; it is also an opportunity for corporate management models to evolve and to rebuild employee trust."
+  },
+  {
+    "source": "这座古镇虽经历了几百年的风雨剥蚀，却依然保留着明清时期的建筑风貌。",
+    "reference": "Although this ancient town has weathered centuries of wind and rain, it still preserves the architectural style of the Ming and Qing dynasties."
+  },
+  {
+    "source": "投资股票虽然有可能获得高额回报，但也伴随着本金损失的巨大风险，投资者应量力而行。",
+    "reference": "While investing in stocks offers the potential for high returns, it also involves substantial risk of losing the principal. Investors should act within their capabilities."
+  },
+  {
+    "source": "作为新一代的创业者，她不仅有着敏锐的商业嗅觉，更具备非凡的领导才能和坚韧不拔的毅力。",
+    "reference": "As a new-generation entrepreneur, she possesses not only keen business acumen but also extraordinary leadership skills and unwavering perseverance."
+  },
+  {
+    "source": "医学影像领域对大模型的需求正迅速增长，它可以有效辅助医生进行早期病灶筛查。",
+    "reference": "The demand for large models in the field of medical imaging is growing rapidly, as they can effectively assist doctors in early lesion screening."
+  },
+  {
+    "source": "这部电影的特效堪称好莱坞顶级水平，但薄弱的剧情和苍白的人物塑造使得它叫座不叫好。",
+    "reference": "The special effects of this movie are on par with Hollywood's top tier, but the weak plot and pale character development make it a commercial success rather than a critical one."
+  },
+  {
+    "source": "在激烈的市场竞争中，只有不断推陈出新、迎合消费者需求的企业，才能立于不败之地。",
+    "reference": "In the fierce market competition, only those companies that constantly innovate and cater to consumer needs can remain invincible."
+  },
+  {
+    "source": "很多当代年轻人面临着前所未有的职场压力，'内卷'一词恰如其分地描述了这种过度竞争的状态。",
+    "reference": "Many modern young people face unprecedented workplace pressure, and the term 'involution' aptly describes this state of excessive competition."
+  },
+  {
+    "source": "这道法国大菜选用了最新鲜的食材，再配以主厨秘制的酱汁，味道真是令人回味无穷。",
+    "reference": "This French entrée uses the freshest ingredients, paired with the chef's secret sauce, making its flavor truly unforgettable."
+  },
+  {
+    "source": "面对错综复杂的国际局势，坚持多边主义和互利共赢才是解决全球性争端的正确途径。",
+    "reference": "In the face of an intricate international situation, adhering to multilateralism and mutual benefit is the correct path to resolving global disputes."
+  },
+  {
+    "source": "该公司的季度财报远超华尔街预期，导致其股价在盘后交易中飙升了15%。",
+    "reference": "The company's quarterly earnings report vastly exceeded Wall Street expectations, causing its stock price to soar by 15% in after-hours trading."
+  },
+  {
+    "source": "新能源汽车不仅代表着一种绿色的出行方式，更是国家能源战略转型的重要抓手。",
+    "reference": "New energy vehicles represent not only a green mode of transportation but also an important handle for the national energy strategic transition."
+  },
+  {
+    "source": "不管前方的路有多么崎岖，只要心中有光，就一定能找到属于自己的星辰大海。",
+    "reference": "No matter how rugged the road ahead is, as long as there is light in your heart, you will surely find your own sea of stars."
+  },
+  {
+    "source": "最近火爆全网的这款独立游戏，凭借其独特的美术风格和引人深思的剧情，赢得了无数玩家的青睐。",
+    "reference": "This highly popular indie game, which has recently taken the internet by storm, won the favor of countless players with its unique art style and thought-provoking plot."
+  },
+  {
+    "source": "他做业务一向是雷厉风行，绝不拖泥带水，这也是他能在短短三年内晋升为区域总监的原因。",
+    "reference": "He has always been resolute and vigorous in business, never dragging his feet, which is exactly why he was promoted to regional director in just three years."
+  },
+  {
+    "source": "教育的本质不仅是传授知识，更是点燃内心的火焰，激发学生独立思考和解决问题的能力。",
+    "reference": "The essence of education is not just imparting knowledge, but igniting the inner flame to inspire students' ability for independent thinking and problem-solving."
+  },
+  {
+    "source": "人工智能生成的艺术作品正在动摇传统著作权法的根基，相关的法律法规亟待完善。",
+    "reference": "Artworks generated by artificial intelligence are shaking the foundations of traditional copyright law, and relevant laws and regulations urgently need improvement."
+  },
+  {
+    "source": "我们必须充分认识到，生态环境保护和经济建设不是水火不容的，而是相辅相成的。",
+    "reference": "We must fully realize that ecological and environmental protection is not incompatible with economic construction; rather, they are mutually reinforcing."
+  },
+  {
+    "source": "经过数月的技术攻关，研发团队终于突破了微米级精度控制的瓶颈，实现了该核心部件的国产化替代。",
+    "reference": "After months of technical tackling, the R&D team finally broke through the bottleneck of micron-level precision control, realizing the domestic substitution of this core component."
+  },
+  {
+    "source": "这本长篇小说以独特的倒叙手法，缓缓揭示了家族在历史洪流中兴衰荣辱的沧桑历程。",
+    "reference": "Using a unique flashback technique, this novel slowly reveals the vicissitudes of a family's rise and fall amidst the torrents of history."
+  },
+  {
+    "source": "在信息爆炸的时代，如何甄别虚假信息、保持批判性思维，已成为每位网民的必修课。",
+    "reference": "In the era of information explosion, how to identify fake news and maintain critical thinking has become a mandatory lesson for every netizen."
+  },
+  {
+    "source": "这项天文发现不仅刷新了人类对黑洞的认知，更为研究早期宇宙的演化提供了宝贵的观测数据。",
+    "reference": "This astronomical discovery not only refreshed human understanding of black holes but also provided valuable observational data for studying the evolution of the early universe."
+  },
+  {
+    "source": "老一辈的手工匠人凭借着刻苦的钻研精神和日复一日的练习，将这门濒临失传的技艺传承了下来。",
+    "reference": "Relying on their diligent spirit of research and day-after-day practice, the older generation of craftsmen managed to preserve this craft that was on the verge of extinction."
+  },
+  {
+    "source": "虽然公司的营收在增长，但获客成本大幅上升，严重挤压了全年的净利润空间。",
+    "reference": "Although the company's revenue is growing, the significant increase in customer acquisition costs has severely squeezed the annual net profit margin."
+  },
+  {
+    "source": "不要总是杞人忧天，有些事情顺其自然反而会有意想不到的好结果。",
+    "reference": "Don't always meet trouble halfway; sometimes letting nature take its course will yield unexpectedly good results."
+  },
+  {
+    "source": "基于联邦学习的隐私计算框架，让多方机构在数据不出域的前提下实现了联合建模。\n",
+    "reference": "The privacy-preserving computing framework based on federated learning enables multi-party institutions to conduct joint modeling without data leaving their respective domains."
+  },
+  {
+    "source": "这是一场实力悬殊的较量，但他硬是凭着一股不服输的韧劲，和世界冠军拼到了最后一刻。",
+    "reference": "It was a disparate contest, yet relying sheerly on an unyielding tenacity, he fought the world champion until the very last moment."
+  },
+  {
+    "source": "这座城市的夜景美得令人窒息，霓虹灯倒映在江面上，仿佛一条璀璨的银河。",
+    "reference": "The night view of this city is breathtakingly beautiful. The neon lights reflect on the river surface, looking like a dazzling galaxy."
+  },
+  {
+    "source": "研究表明，肠道微生物群的失衡与肥胖、抑郁等多种慢病有着千丝万缕的联系。",
+    "reference": "Research shows that the imbalance of gut microbiota is inextricably linked to multiple chronic diseases such as obesity and depression."
+  },
+  {
+    "source": "供应链的任何一个环节出现停滞，都可能引发蝴蝶效应，导致全球范围内的商品短缺。",
+    "reference": "A stagnation in any node of the supply chain may trigger a butterfly effect, leading to worldwide shortages of commodities."
+  },
+  {
+    "source": "在这个看脸的时代，他偏要用实力证明，才华和内涵才是真正能经得起时间考验的资本。",
+    "reference": "In an era where appearance is highly prioritized, he insisted on proving with his abilities that talent and substance are the true assets capable of standing the test of time."
+  },
+  {
+    "source": "央行此番降息旨在降低实体企业融资成本，刺激消费回暖，从而托底宏观经济。",
+    "reference": "The central bank's recent interest rate cut is aimed at reducing the financing costs for real enterprises and stimulating a consumption recovery, thereby anchoring the macroeconomy."
+  },
+  {
+    "source": "无论是阳春白雪还是下里巴人，艺术的最高境界是能够触动人内心深处最柔软的地方。",
+    "reference": "Whether highbrow or lowbrow, the highest state of art is its ability to touch the softest part deep within a person's heart."
+  },
+  {
+    "source": "他讲话总是避重就轻、顾左右而言他，让在场的记者们感到十分不满。",
+    "reference": "He always talks around the real issues and deflects questions, which made the reporters present quite dissatisfied."
+  },
+  {
+    "source": "基因编辑技术如同一把精确的'分子手术刀'，为根治某些罕见遗传病带来了曙光。",
+    "reference": "Gene editing technology, akin to a precise 'molecular scalpel', has brought the dawn of curing certain rare genetic diseases."
+  },
+  {
+    "source": "与其在别人的辉煌里仰望，不如在自己的领域里默默深耕，终有一天你会迎来属于自己的高光时刻。",
+    "reference": "Rather than looking up to the glory of others, it is better to cultivate quietly in your own field. One day you will welcome your own crowning moment."
+  },
+  {
+    "source": "自动驾驶系统的安全性验证是一个极其漫长的过程，需要积累百亿公里级别的极端路况测试数据。",
+    "reference": "The safety verification of an autonomous driving system is an extremely lengthy process, requiring the accumulation of billions of kilometers of testing data under extreme road conditions."
+  },
+  {
+    "source": "这部纪录片没有宏大的叙事，而是将镜头对准了生活在弄堂里的普通邻里，充满了人间烟火气。",
+    "reference": "This documentary lacks grand narratives; instead, it focuses its lens on the ordinary neighbors living in the alleyways, brimming with the raw essence of everyday life."
+  },
+  {
+    "source": "企业文化不是写在墙上的标语，而是体现在每一次决策、每一次对员工的关照之中。",
+    "reference": "Corporate culture is not a slogan written on a wall; it is embodied in every decision made and every act of care for employees."
+  },
+  {
+    "source": "量子纠缠现象展示了微观世界反直觉的物理规律，这完全颠覆了经典力学的局限性假设。",
+    "reference": "The phenomenon of quantum entanglement demonstrates counterintuitive physical laws of the microscopic world, completely overturning the restrictive assumptions of classical mechanics."
+  },
+  {
+    "source": "如果说他上半场的发挥中规中矩，那么到了下半场，他完全主宰了比赛，势如破竹般地连进三球。",
+    "reference": "If his performance in the first half was average, then in the second half he completely dominated the game, relentlessly scoring three consecutive goals."
+  },
+  {
+    "source": "在算法的包裹下，人们容易陷入'信息茧房'，渐渐失去了接纳不同声音的耐心。",
+    "reference": "Wrapped in algorithms, people easily fall into 'information cocoons', gradually losing the patience to accept different voices."
+  },
+  {
+    "source": "我国的高铁网络已经基本成型，这种安全、准时、快捷的交通方式成为了人们中短途出行的首选。",
+    "reference": "China's high-speed rail network has essentially taken shape. This safe, punctual, and fast mode of transportation has become the first choice for people's short-to-medium distance travels."
+  },
+  {
+    "source": "这个看似简单的推论，背后却隐藏着十多页密密麻麻的严密数学推导。",
+    "reference": "Behind this seemingly simple corollary lies more than a dozen pages of dense, rigorous mathematical derivation."
+  },
+  {
+    "source": "虽然我们面临着前所未有的困难，但只要上下同欲、共克时艰，就没有迈不过去的坎。",
+    "reference": "Although we are facing unprecedented difficulties, as long as we share the same desires from top to bottom and tide over the hardships together, there is no hurdle we cannot overcome."
+  },
+  {
+    "source": "这家具备百年历史的瑞士表厂，依然坚持着由经验丰富的工匠手工打磨那些极其微小的机械齿轮。",
+    "reference": "This Swiss watchmaking factory with a century-old history still insists on having experienced craftsmen hand-polish those exceedingly tiny mechanical gears."
+  },
+  {
+    "source": "虚拟现实技术目前在视觉体验上已经达到了很高的水平，但如何解决长期佩戴的眩晕感仍是一大难题。",
+    "reference": "Virtual reality technology has currently reached a very high level in terms of visual experience, but how to resolve the dizziness caused by long-term wear remains a major hurdle."
+  },
+  {
+    "source": "与其说是这是一场研讨会，不如说是一次跨界思想碰撞的盛宴，启发了我们太多灵感。",
+    "reference": "Rather than calling it a seminar, it is better described as a feast of cross-disciplinary intellectual collisions that inspired so much for us."
+  },
+  {
+    "source": "市场需求是瞬息万变的，死守过去的成功经验只会让企业在舒适区中慢性死亡。",
+    "reference": "Market demands change rapidly; sticking stubbornly to past successful experiences will only cause a company to die a slow death in its comfort zone."
+  },
+  {
+    "source": "碳中和不仅是应对气候变化的国际共识，同时也正在催生一个价值数万亿美元的庞大绿色产业。",
+    "reference": "Carbon neutrality is not only an international consensus for addressing climate change, but it is also spawning a massive green industry worth trillions of dollars."
+  },
+  {
+    "source": "他的画风独树一帜，既有着传统水墨画的写意，又融合了西方现代派的色彩构成。",
+    "reference": "His painting style is unique, possessing both the freehand brushwork of traditional ink painting and the color composition of Western modernism."
+  },
+  {
+    "source": "在突发公共卫生事件面前，基层社区展现出了强大的组织韧性和守望相助的感人精神。",
+    "reference": "In the face of sudden public health emergencies, grassroots communities have demonstrated strong organizational resilience and a touching spirit of mutual assistance."
+  },
+  {
+    "source": "想要在这个高度内卷的行业立足，光有热情是不够的，你还需要极强的抗压能力和终身学习的习惯。",
+    "reference": "To gain a foothold in this highly involuted industry, passion alone is not enough; you also need extreme stress tolerance and a habit of lifelong learning."
+  },
+  {
+    "source": "深空探测任务极大地拓宽了人类的视野，让我们从更宏大的宇宙尺度来重新审视地球的命运。",
+    "reference": "Deep space exploration missions have vastly broadened human horizons, allowing us to re-examine the destiny of Earth from a grander cosmic scale."
+  },
+  {
+    "source": "该款软件因为未经用户许可私自收集通讯录而在应用商店被强制下架整改。",
+    "reference": "The software was forcibly taken down from the app store for rectification because it secretly collected address books without users' permission."
+  },
+  {
+    "source": "从无名小卒到百亿票房导演，他一贯以来的那种近乎偏执的细节控没有丝毫改变。",
+    "reference": "From a nobody to a multi-billion box-office director, his consistent, almost paranoid obsession with details hasn't changed bit."
+  },
+  {
+    "source": "不要被那些表面光鲜的数据迷惑了双眼，我们要穿透现象，去挖掘业务增长停滞的核心痛点。",
+    "reference": "Do not let your eyes be deceived by those superficially glamorous data; we must see through the phenomena to unearth the core pain points behind the stagnation in business growth."
+  },
+  {
+    "source": "尽管这口古井已经干涸多年，它依然是村里老人寄托乡愁的重要支点。",
+    "reference": "Although this ancient well dried up years ago, it remains an important focal point for the elderly in the village to anchor their nostalgia."
+  },
+  {
+    "source": "在这个项目上，各部门间推诿扯皮现象严重，导致整体进度比预期落后了整整一个月。",
+    "reference": "On this project, severe buck-passing among various departments resulted in the overall progress falling a full month behind schedule."
+  },
+  {
+    "source": "微塑料污染已经入侵到人类的食物链中，这警示我们必须加快建立塑料制品的闭环回收体系。",
+    "reference": "Microplastic pollution has invaded the human food chain, warning us that we must accelerate the establishment of a closed-loop recycling system for plastic products."
+  },
+  {
+    "source": "这位学者一针见血地指出了当前养老金制度面临的结构性缺陷，并提出了切中肯綮的改革建议。",
+    "reference": "This scholar incisively pointed out the structural flaws facing the current pension system and put forward highly pertinent reform proposals."
+  },
+  {
+    "source": "我们不仅要授人以鱼，更要授人以渔。扶贫工作的关键在于激发当地群众内生的发展动力。",
+    "reference": "We must not only give a man a fish but also teach him how to fish. The key to poverty alleviation lies in stimulating the endogenous development momentum of the local people."
+  },
+  {
+    "source": "他写的诗有时晦涩难懂，有时又清新脱俗，让人很难用一种固定的风格去定义他。",
+    "reference": "The poems he writes are sometimes obscure and difficult to understand, yet other times fresh and refined, making it hard to define him with a fixed style."
+  },
+  {
+    "source": "新一轮的科技革命正在重塑全球产业链版图，谁能掌握核心技术，谁就能在未来竞争中占据主动权。",
+    "reference": "A new round of scientific and technological revolution is reshaping the landscape of global industrial chains. Whoever masters core technologies will seize the initiative in future competition."
+  },
+  {
+    "source": "哪怕只有千分之一的希望，医疗团队也决不轻言放弃，他们用几百个小时的手术创造了生命奇迹。",
+    "reference": "Even if there was only a one in a thousand chance, the medical team never talked lightly of giving up. Through hundreds of hours of surgery, they created a miracle of life."
+  },
+  {
+    "source": "虽然只是一部低成本的网剧，但是它不仅逻辑严密、节奏紧凑，还探讨了深层次的人性善恶。",
+    "reference": "Although it is just a low-budget web series, not only is it strictly logical and tightly paced, but it also explores the deep-seated good and evil of human nature."
+  },
+  {
+    "source": "这家老字号饭店经历了百年的岁月沉淀，那一锅醇厚浓郁的老汤就是他们最引以为傲的招牌。",
+    "reference": "Having experienced the precipitation of a century, this time-honored restaurant's most proud signature is that pot of rich, mellow aged broth."
+  },
+  {
+    "source": "面对媒体的质疑，发言人从容不迫、侃侃而谈，用强有力的数据回击了所有不实指控。",
+    "reference": "Facing the media's questioning, the spokesperson was unhurried and spoke with assurance, rebutting all false allegations with powerful data."
+  },
+  {
+    "source": "芯片制造被誉为现代工业皇冠上的明珠，其涉及的光学、材料学和精密仪器都是顶尖技术的结晶。",
+    "reference": "Chip manufacturing is hailed as the jewel in the crown of modern industry; the optics, materials science, and precision instruments it involves are all crystallizations of cutting-edge technologies."
+  },
+  {
+    "source": "那段青葱岁月里的友情，像是一杯陈年老酒，时间越久，回味越是甘甜。",
+    "reference": "The friendship from those youthful years is like a cup of aged wine: the older it gets, the sweeter the aftertaste."
+  },
+  {
+    "source": "这次黑客攻击事件给公司敲响了警钟：网络安全不仅是IT部门的事，更需要全员提高防范意识。",
+    "reference": "This hacker attack sounded an alarm for the company: cybersecurity is not just the IT department's concern, but requires heightened awareness from all employees."
+  },
+  {
+    "source": "不要试图用一个谎言去掩盖另一个谎言，因为在真相面前，所有的伪装最终都会不攻自破。",
+    "reference": "Do not attempt to cover up one lie with another, for in the face of the truth, all disguises will ultimately fall apart."
+  },
+  {
+    "source": "这首古典交响曲在指挥家的精彩演绎下，展现出了悲壮与柔情交织的宏大意境，令全场观众如痴如醉。",
+    "reference": "Under the maestro's brilliant interpretation, this classical symphony revealed a grand ambiance where solemnity and tenderness intertwined, leaving the entire audience mesmerized."
+  },
+  {
+    "source": "新能源电池回收是一块难啃的骨头，但这又是实现绿色出行的最后一块必须拼好的拼图。",
+    "reference": "New energy battery recycling is a tough nut to crack, yet it is also the final piece of the puzzle that must be put together to achieve green travel."
+  },
+  {
+    "source": "他在演讲中妙语连珠，频频抛出幽默的段子，将沉闷的学术讲座变成了精彩脱口秀。",
+    "reference": "He was full of witticisms in his speech, frequently tossing out humorous anecdotes, turning a dull academic lecture into an exciting talk show."
+  },
+  {
+    "source": "在荒野生存中，火种、水源和庇护所缺一不可，任何一丝马虎都可能付出生命的代价。",
+    "reference": "In wilderness survival, tinder, a water source, and shelter are all indispensable; any slight negligence could cost one's life."
+  },
+  {
+    "source": "很多传统行业正在借助数字化转型的东风，焕发出全新的活力，完成了凤凰涅槃般的蜕变。",
+    "reference": "Many traditional industries are taking advantage of the favorable wind of digital transformation to radiate brand-new vitality, completing a metamorphosis akin to a phoenix rising from the ashes."
+  },
+  {
+    "source": "虽然这种罕见病的治疗费用犹如天文数字，但在社会各界的爱心接力下，孩子终于凑齐了手术费。",
+    "reference": "Even though the treatment cost for this rare disease is astronomical, thanks to the continuous outpouring of love and support from all sectors of society, the child finally gathered enough money for the surgery."
+  },
+  {
+    "source": "大语言模型的'幻觉'问题一直是学术界悬而未决的难题，模型有时会理直气壮地胡说八道。",
+    "reference": "The 'hallucination' problem of large language models has always been an unresolved dilemma in academia, as the models sometimes spout nonsense with absolute confidence."
+  },
+  {
+    "source": "生活不止眼前的苟且，还有诗和远方。每个人都应该在忙碌中留出一片属于自己的精神自留地。",
+    "reference": "Life is not just about the daily grind right in front of you; it also encompasses poetry and distant horizons. Everyone should set aside a private spiritual plot amidst their busy lives."
+  },
+  {
+    "source": "由于供应链上游晶圆代工厂频繁遭遇断电事故，导致今年多款旗舰手机被迫推迟发布。",
+    "reference": "Due to frequent power outage incidents at upstream wafer foundries in the supply chain, the release of multiple flagship smartphones this year was forced to be delayed."
+  },
+  {
+    "source": "在这场席卷全球的金融风暴中，只有那些负债率低、现金流充裕的跨国企业才得以独善其身。",
+    "reference": "In this global financial storm, only those multinational corporations with low debt ratios and abundant cash flows managed to stay unaffected."
+  },
+  {
+    "source": "好的家风如春风化雨，能在潜移默化中培养孩子正直、善良和百折不挠的高贵品格。",
+    "reference": "Good family traditions, like the life-giving spring breeze and rain, can imperceptibly cultivate noble virtues in children, such as integrity, kindness, and indomitability."
+  },
+  {
+    "source": "当一切尘埃落定，人们才发现这场轰轰烈烈的投资热潮，其实不过是一场击鼓传花的游戏。",
+    "reference": "When the dust settled, people finally realized that this vigorous investment boom was in fact nothing more than a game of passing the parcel."
+  }
+]
